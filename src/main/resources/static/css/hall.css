@@ -1,0 +1,93 @@
+
+#navigation {
+	position: sticky;
+	top: 0rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	border-bottom: solid whitesmoke 5px;
+}
+
+#hall,#release,#help {
+	font-size: 1.25rem;
+	margin-left: 3rem;
+	margin-top: 0.4rem;
+}
+
+#hall {
+	color: rgb(84, 121, 237);
+}
+
+.dropdown {
+	margin-top: 5px;
+}
+
+#head-portrait {
+	margin-top: 2px;
+	font-size: 1.5rem;
+}
+
+.sticky-left {
+	position: sticky;
+	bottom: 27%;
+	width: 12.38rem;
+	display: inline-block;
+}
+
+[data-bs-toggle=tab] {
+	color: black;
+}
+
+.tab-content {
+	width: 12.38rem;
+	height: 22rem;
+	border-left: solid whitesmoke 2px;
+	border-right: solid whitesmoke 2px;
+	border-bottom: solid whitesmoke 2px;
+
+}
+
+.a-navbar-nav {
+	color: #6c757d;
+	text-decoration: none;
+}
+
+.li-navbar-nav {
+	margin-top: 0.7rem;
+	margin-left: 0.27rem;
+}
+
+.project-list {
+	border: solid whitesmoke 3px;
+	margin-left: 3rem;
+	width: 50rem;
+	display: inline-block;
+}
+
+.projects {
+	margin: 0;
+}
+
+.project-content {
+	border: solid whitesmoke 3px;
+}
+
+.project-name {
+	font-size: 1.7rem;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-decoration: none;
+	color: rgb(84, 121, 238);
+}
+.project-budget, .project-end {
+	font-size: 0.97rem;
+	color: rgba(170, 176, 182, 0.97);
+	margin: 1rem;
+}
+.project-budget {
+	text-align: right;
+}
+.project-type, .project-cycle {
+	font-size: 1.2rem;
+	margin: 1rem;
+}

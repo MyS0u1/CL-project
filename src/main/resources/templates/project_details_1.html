@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>CL-详情</title>
+		<link rel="shortcut icon" href="./imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/project_details_1.css" />
+		<script type="text/javascript" src="./js/bootstrap.min.js" async></script>
+	</head>
+	<body class="container">
+		<!-- 顶部导航栏 -->
+		<div id="navigation">
+			<nav class="navbar navbar-expand-sm bg-light navbar-light">
+			  	<div class="container-fluid">
+			    	<ul class="navbar-nav">
+			      		<li class="nav-item">
+			      			<a class="nav-link active" th:href="@{index_}">
+			      				<img src="./imgs/logo.png" />
+			      			</a>
+			      		</li>
+			     		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/hall}" id="hall">大厅</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/release}" id="release">发布</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/release}" id="help">帮助</a>
+			      		</li>
+			    	</ul>
+			    	<div class="dropdown">
+			    		<img id="head-portrait" src="./imgs/head-portrait.png" />
+					  	<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+					    	个人中心
+					  	</button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" th:href="@{/account}">个人中心</a></li>
+					    	<li><a class="dropdown-item" th:href="@{/reset_password}">更改密码</a></li>
+						   	<li><a class="dropdown-item" th:href="@{/}">退出账号</a></li>
+						</ul>
+					</div>
+			  	</div>
+			</nav>
+		</div>
+		
+		<div class="project-content">
+			<div class="row content">
+				<span class="col project-name">项目名称: </span>
+			</div>
+			<div class="row">
+				<span class="col project-type">项目类型: </span>
+				<span class="col project-cycle">截至日期: </span>
+			</div>
+			<span class="project-end">发布日期: </span>
+		</div>
+		<div class="project-details">
+			<div class="project-introduce">
+				<span class="font-big-size">项目介绍</span>
+				<div class="introduce">
+					&emsp;&emsp;这里是项目介绍的内容...
+				</div>
+			</div>
+			<div class="project-file">
+				<span class="font-big-size">项目附件</span>
+				<div class="download">
+					<a href="">下载</a>
+				</div>
+			</div>
+			<div class="project-progress">
+				<span class="font-big-size">项目进度</span>
+				<div class="progress-content">正在进行/未完成/已完成</div>
+				<!-- 已完成时才显示下载项 -->
+				<a class="download" href="">下载</a>
+			</div>
+		</div>
+	</body>
+</html>

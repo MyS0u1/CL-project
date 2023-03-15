@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>CL-帮助</title>
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/help.css" />
+		<script type="text/javascript" src="./js/bootstrap.min.js" async></script>
+	</head>
+	<body class="container">
+		<div id="navigation">
+			<nav class="navbar navbar-expand-sm bg-light navbar-light">
+			  	<div class="container-fluid">
+			    	<ul class="navbar-nav">
+			      		<li class="nav-item">
+			      			<a class="nav-link active" th:href="@{/index_}">
+			      				<img src="./imgs/logo.png" />
+			      			</a>
+			      		</li>
+			     		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/hall}" id="hall">大厅</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/release}" id="release">发布</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" th:href="@{/help}" id="help">帮助</a>
+			      		</li>
+			    	</ul>
+			    	<div class="dropdown">
+			    		<img id="head-portrait" src="./imgs/head-portrait.png" />
+					  	<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+					    	个人中心
+					  	</button>
+					  	<ul class="dropdown-menu">
+					    	<li><a class="dropdown-item" th:href="@{/account}">个人中心</a></li>
+					    	<li><a class="dropdown-item" th:href="@{/reset_password}">更改密码</a></li>
+						   	<li><a class="dropdown-item" th:href="@{/}">退出账号</a></li>
+						</ul>
+					</div>
+			  	</div>
+			</nav>
+		</div>
+		
+		<!--常见问题-->
+        <div id="help-table" class="text-center">
+            <h3 class="questions">
+                常见问题
+			</h3>
+			<div id="accordion">
+				<div class="card">
+				  	<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseOne">
+					  		问题1
+						</a>
+				  	</div>
+				  	<div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+					  		解答内容
+						</div>
+				  	</div>
+				</div>
+				<div class="card">
+				  	<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+					  		问题2
+						</a>
+				  	</div>
+				  	<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							解答内容
+						</div>
+				  	</div>
+				</div>
+				<div class="card">
+				  	<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+							问题3
+						</a>
+				  	</div>
+				  	<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							解答内容
+						</div>
+				  	</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+					  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+							问题4
+					  </a>
+					</div>
+					<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+					  <div class="card-body">
+							解答内容
+					  </div>
+					</div>
+			  	</div>
+				<div class="card">
+					<div class="card-header">
+					  	<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+							问题5
+					  	</a>
+					</div>
+					<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+					  <div class="card-body">
+							解答内容
+					  </div>
+					</div>
+			  	</div>
+				<div class="card">
+					<div class="card-header">
+					  	<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+							问题6
+					  	</a>
+					</div>
+					<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+					  <div class="card-body">
+							解答内容
+					  </div>
+					</div>
+			  	</div>
+				  <div class="card">
+					<div class="card-header">
+					  	<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+							问题7
+					  	</a>
+					</div>
+					<div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+					  <div class="card-body">
+							解答内容
+					  </div>
+					</div>
+			  	</div>
+
+			  
+			</div>
+
+        </div>
+		
+		<!--问题反馈-->
+		<div class="offcanvas offcanvas-bottom" id="staff-service">
+			<div class="offcanvas-header">
+				<h3 class="offcanvas-title">问题反馈</h3>
+			  	<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+			</div>
+			<div class="offcanvas-body">
+				<form action="" method="post">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="请输入邮箱地址" /> <br />
+					<textarea class="form-control input-textarea" placeholder="请输入反馈内容（不超过1000字）"></textarea>
+					<button class="btn btn-secondary" type="submit">提交</button>
+				</form>
+			</div>
+		</div>
+		<div id="feedback" class="text-center">
+			<button id="staff-service1" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staff-service">
+				问题反馈
+			</button>
+		</div>
+	</body>
+</html>
+

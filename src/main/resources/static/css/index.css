@@ -1,0 +1,55 @@
+#navigation {
+	margin-top: 3rem;
+	margin-bottom: 0rem;
+	border-bottom: solid whitesmoke 5px;
+}
+
+#hall,#release,#help {
+	font-size: 1.25rem;
+	margin-left: 3rem;
+	margin-top: 0.4rem;
+}
+
+#go-login {
+	font-size: 1rem;
+	margin-left: 3rem;
+	margin-top: 0.7rem;
+	right: 5rem;
+}
+
+#go-registration {
+	font-size: 1rem;
+	margin-left: 3rem;
+	margin-top: 0.7rem;
+	right: 0.8rem;
+}
+
+#demo {
+	margin: 3rem;
+}
+
+#introduction {
+	margin-right: 7rem;
+	margin-left: 7rem;
+	margin-bottom: 17rem;
+}
+
+.what-want {
+	font-size: 3.7rem;
+	margin-bottom: 3rem;	
+}
+
+.want-people {
+	margin-left: 7rem;
+	font-size: 3rem;
+	color: rgba(5, 127,172, 0.7);
+	text-decoration: none;
+}
+
+.want-project {
+	right: 0;
+	margin-right: 7rem;
+	font-size: 3rem;
+	color: rgba(35, 169,242, 0.7);
+	text-decoration: none;
+}

@@ -1,0 +1,49 @@
+server:
+  port: 80
+
+
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 1800000
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+  mail:
+    host: smtp.163.com
+    username: clemail163@163.com
+    password: EUKJCGJIGVTPKZUW
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cl?serverTimezone=GMT&2B8&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123
+
+
+mybatis-plus:
+  type-aliases-package: art.chunlei.boot.pojo
+
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  global-config:
+    db-config:
+      id-type: auto  # 设置全局主键生成策略为自增
+
+
+
+
+

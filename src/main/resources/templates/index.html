@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://wwwo.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>CL-首页</title>
+		<link rel="shortcut icon" href="./imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<script type="text/javascript" src="./js/bootstrap.min.js" async></script>
+		<script type="text/javascript" src="./js/index.js" async></script>
+	</head>
+	<body class="container">
+		<!-- 头部导航栏 -->
+		<div id="navigation">
+			<nav class="navbar navbar-expand-sm bg-light navbar-light">
+			  	<div class="container-fluid position-relative">
+			    	<ul class="navbar-nav">
+			      		<li class="nav-item">
+			      			<a class="nav-link active" th:href="@{/}">
+			      				<img src="./imgs/logo.png" />
+			      			</a>
+			      		</li>
+			     		<li class="nav-item">
+			        		<a class="nav-link" id="hall" onclick="showAlert()">大厅</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" id="release" onclick="showAlert()">发布</a>
+			      		</li>
+			      		<li class="nav-item">
+			        		<a class="nav-link" id="help" onclick="showAlert()">帮助</a>
+			      		</li>
+			      		<li class="nav-item position-absolute" id="go-login">
+			      			<a class="nav-link" th:href="@{/login}">去登录</a>
+			      		</li>
+			      		<li class="nav-item position-absolute" id="go-registration">
+			      			<a class="nav-link" th:href="@{/registration}">去注册</a>
+			      		</li>
+			    	</ul>
+			  	</div>
+			</nav>
+		</div>
+		
+		<!-- 轮播 -->
+		<div id="demo" class="carousel slide" data-bs-ride="carousel">
+		
+		  	<!-- 指标/点 -->
+		  	<div class="carousel-indicators">
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+			    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+			</div>
+		
+		  	<!-- 幻灯片/轮播 -->
+		  	<div class="carousel-inner">
+		    	<div class="carousel-item active">
+			      	<img src="imgs/img1.png" alt="img1" class="d-block w-100 rounded" />
+			      	<div class="carousel-caption">
+    					<h3>Professional</h3>
+    					<p>专业团队</p>
+  					</div>
+		    	</div>
+			    <div class="carousel-item">
+			      	<img src="imgs/img2.png" alt="img2" class="d-block w-100 rounded" />
+			      	<div class="carousel-caption">
+    					<h3>Safe</h3>
+    					<p>安全交易</p>
+  					</div>
+			    </div>
+			    <div class="carousel-item">
+			      	<img src="imgs/img3.png" alt="img3" class="d-block w-100 rounded" />
+			      	<div class="carousel-caption">
+    					<h3>Easy</h3>
+    					<p>简化流程</p>
+  					</div>
+			    </div>
+			   	<div class="carousel-item">
+			      	<img src="imgs/img4.png" alt="img4" class="d-block w-100 rounded" />
+			      	<div class="carousel-caption">
+    					<h3>Relaxing</h3>
+    					<p>放心服务</p>
+  					</div>
+			    </div>
+			</div>
+		
+			 <!-- 左右控件/图标 -->
+			<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+			    <span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
+
+		<!-- 引导链接 -->
+		<div id="introduction">
+			<h3 class="what-want">您想要：</h3>
+			<div class="row position-relative">
+	  			<div class="col-sm">
+	  				<a class="want-people position-absolute" onclick="showAlert()">找人才?</a>
+	  			</div>
+	  			<div class="col-sm">
+	  				<a class="want-project position-absolute" onclick="showAlert()">找项目?</a>
+	  			</div>
+			</div>		
+		</div>
+	</body>
+</html>

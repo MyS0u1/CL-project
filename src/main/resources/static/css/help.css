@@ -1,0 +1,78 @@
+
+#navigation {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	border-bottom: solid whitesmoke 5px;
+}
+
+#hall,#release,#help {
+	font-size: 1.25rem;
+	margin-left: 3rem;
+	margin-top: 0.4rem;
+}
+
+#help {
+	color: rgb(84, 121, 237);
+}
+
+.dropdown {
+	margin-top: 5px;
+}
+
+#head-portrait {
+	margin-top: 2px;
+	font-size: 1.5rem;
+}
+
+.sticky-left {
+	position: sticky;
+	top: 3rem;
+	bottom: 3rem;
+	width: 12.38rem;
+}
+
+[data-bs-toggle=tab] {
+	color: black;
+}
+
+.tab-content {
+	width: 12.38rem;
+	height: 22rem;
+	border: solid whitesmoke 2px;
+}
+
+.a-navbar-nav {
+	color: #6c757d;
+	text-decoration: none;
+}
+
+.li-navbar-nav {
+	margin-top: 0.7rem;
+	margin-left: 0.27rem;
+}
+
+.questions {
+	font-size: 2rem;
+}
+
+#help-table {
+    margin-left: auto;
+    margin-right: auto;
+	width: 57rem;
+}
+
+#staff-service {
+	margin-top: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+#feedback {
+    margin-left: auto;
+    margin-right: auto;
+	width: 57rem;
+}
+
+.input-textarea {
+	margin-bottom: 1.5rem;
+}

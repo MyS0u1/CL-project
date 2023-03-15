@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>CL-登录</title>
+		<link rel="shortcut icon" href="./imgs/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./css/login.css" />
+	</head>
+	<body class="container">
+		<div id="logo" class="position-relative">
+			<a th:href="@{/}">
+				<img src="./imgs/logo.png" />
+			</a>
+			<a class="go-register position-absolute" th:href="@{/registration}">没账号？去注册</a>
+		</div>
+		<div id="show-login">
+			<form method="post" th:action="@{/isLogin}">
+		  		<div class="mb-3">
+				    <label for="exampleInputEmail1" class="form-label">Email address</label> <br />
+				    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="请输入邮箱地址" name="email" required />
+			  	</div>
+			  	<div class="mb-3">
+			    	<label for="exampleInputPassword1" class="form-label">Password</label> <br />
+			    	<input type="password" class="form-control" id="inputPassword" placeholder="请输入密码" name="password" required />
+			  	</div>
+				<span id="msg-span">[[${loginMsg}]]</span>
+			  	<div class="position-relative login-button">
+			  		<button id="login-button" type="submit" class="btn btn-primary">登录</button>
+			  		<a id="retrieve-password" class="position-absolute" th:href="@{reset_password}">找回密码</a>
+			  	</div>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+#logo {
+	margin-top: 3rem;
+	margin-bottom: 7rem;
+	border-bottom: solid aliceblue 5px;
+}
+
+#show-registration {
+	width: 27rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.7rem 2.7rem 1.2rem 2.7rem;
+	border: solid 3px whitesmoke;
+}
+
+#retrieve-password {
+    color: #727f8f;
+    text-decoration: none;
+}
+
+.position-absolute {
+	right: 0;
+	margin-bottom: 10rem;
+}
+
+.go-register {
+	position: absolute;
+	right: 0;
+	margin-top: 8px;
+	color: #727f8f;
+}
+
+#pwd1Span, #pwd2Span, #vcSpan {
+	font-size: 0.9rem;
+	color: #727f8f;
+}

@@ -1,0 +1,45 @@
+#release {
+    color: rgb(84, 121, 237);
+}
+
+#navigation {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	border-bottom: solid whitesmoke 5px;
+}
+
+#hall,#release,#help {
+	font-size: 1.25rem;
+	margin-left: 3rem;
+	margin-top: 0.4rem;
+}
+
+.dropdown {
+	margin-top: 5px;
+}
+
+#head-portrait {
+	margin-top: 2px;
+	font-size: 1.5rem;
+}
+
+#release-content {
+    width: 57rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid whitesmoke 3px;
+    padding: 2.7rem 2.7rem 1.2rem 2.7rem;
+}
+
+.project-name, .project-budget, .deadline, .project-type, .project-details {
+    margin-bottom: 3rem;
+}
+
+.type-list {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-button {
+    margin-top: 2.5rem;
+}
